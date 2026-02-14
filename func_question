@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int fun(int num){
+int count=0;
+while(num){
+    count ++;
+    num >>=1;
+}
+return (count);
+}
+int main(){
+    int n=435;
+    printf("Count=%d\n", fun(n));
+    return 0;
+}
