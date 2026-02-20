@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){char arr[11]="helloworld";
+    char arr1[10]="helloworld";
+    char *str="helloworld";
+    char*str1="helloworld";
+    if(arr==arr1)
+    printf("Modifible strings are shared\n");
+    else
+    printf("Modifible strings are not shared\n");
+    if(str==str1)
+    printf("Constant strings are shred\n");
+    else
+    printf("Constant strings are not shared\n");
+    }
