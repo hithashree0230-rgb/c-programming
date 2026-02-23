@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int i,n,j;
+    int isunique;
+    printf("Enter array size: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter array ele: ");
+    for(i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
+    for(i=0; i<n; i++){
+        isunique=1;
+        for(j=0; j<i; j++){
+           
+            if(arr[i]==arr[j]){
+            isunique=0;
+            break;
+        }
+    }
+        if(isunique==1){
+         printf("%d ", arr[i]);  
+        }
+    }
+    
+    return 0;
+    }
