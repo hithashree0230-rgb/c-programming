@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+char *my_strcat(char *s2, char *s1, int n){
+    int index=strlen(s2);
+    for(int i=0; (i<n && s1[i]!=0); i++){
+        s2[index]=s1[i];
+        index++;
+    }
+    s2[index]='\0';
+    return s2;
+}
+int main(){
+    char str1[100];
+    char str2[100];
+    int m;
+    printf("Enter string 1: ");
+    scanf("%[^\n]", str1);
+    getchar();
+    printf("Enter string 2: ");
+    scanf("%[^\n]", str2);
+    getchar();
+    printf("Enter number: ");
+    scanf("%d", &m);
+    char *ret=my_strcat(str2,str1,m);
+    printf("the n concantenated string is: %s\n", ret);
+
+}
